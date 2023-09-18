@@ -2,7 +2,7 @@
 from random import randint
 
 
-def attack(char_name, char_class):
+def attack(char_name: str, char_class: str) -> str:
     """" Attack function."""
     if char_class == 'warrior':
         return (f'{char_name} нанёс противнику урон, равный '
@@ -16,7 +16,7 @@ def attack(char_name, char_class):
     return f'{char_name} не нанёс противнику урон'
 
 
-def defence(char_name, char_class):
+def defence(char_name: str, char_class: str) -> str:
     """" Defence function."""
     if char_class == 'warrior':
         return f'{char_name} блокировал {10 + randint(5, 10)} ед. урона'
